@@ -1,0 +1,1094 @@
+/* ==========================================================
+   ESTILO MINIMALISTA BRUTALISTA EDITORIAL & CORES DE EVA HELLER
+   Fotógrafo: William Del Barrio ((12) 98813-0316)
+   Candidata: Solange do Feital | Pindamonhangaba - SP
+   Paleta: Eva Heller (Preto Absoluto, Azul Razão, Branco Verdade, Terracota Coragem)
+   ========================================================== */
+
+:root {
+  /* Cores fundamentadas em Eva Heller ("A Psicologia das Cores") */
+  --c-heller-black: #0c0d0f;        /* Poder, solidez, elegância sem concessões */
+  --c-heller-blue: #0b2239;         /* Razão, serenidade, confiança e fidelidade */
+  --c-heller-white: #fbfbf9;        /* Transparência, começo, verdade moral */
+  --c-heller-terracotta: #8e2b27;   /* Coragem, amor ao povo, energia vital */
+  --c-heller-slate: #4e5561;        /* Sobriedade analítica, equilíbrio */
+  
+  --bg-canvas: #f4f3ef;             /* Papel encorpado editorial / marfim cru */
+  --border-stark: #111111;          /* Borda brutalista pura e nítida */
+  --border-subtle: #d3d1c9;         /* Divisórias estruturais */
+  
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-mono: 'Space Grotesk', monospace;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-canvas);
+  color: var(--c-heller-black);
+  font-family: var(--font-sans);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  border-left: 8px solid var(--border-stark);
+  border-right: 8px solid var(--border-stark);
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ==========================================================
+   HEADER MINIMALISTA BRUTALISTA
+   ========================================================== */
+.top-header {
+  background: var(--bg-canvas);
+  border-bottom: 2px solid var(--border-stark);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.studio-name {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 1.5px;
+  color: var(--c-heller-black);
+}
+
+.studio-divider {
+  color: var(--border-subtle);
+  font-weight: 300;
+}
+
+.studio-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--c-heller-slate);
+  letter-spacing: 1px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.client-badge {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  background: white;
+  border: 1px solid var(--border-stark);
+  padding: 6px 14px;
+  letter-spacing: 0.8px;
+}
+
+.btn-header {
+  background: var(--c-heller-black);
+  color: white;
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 8px 18px;
+  border: 1px solid var(--border-stark);
+  transition: all 0.2s ease;
+  letter-spacing: 0.5px;
+}
+
+.btn-header:hover {
+  background: var(--c-heller-blue);
+  color: white;
+}
+
+/* ==========================================================
+   HERO SECTION (SEM PREÇO - FOCO TOTAL NA REPUTAÇÃO)
+   ========================================================== */
+.hero-section {
+  padding: 80px 0 90px;
+  border-bottom: 2px solid var(--border-stark);
+  background: white;
+}
+
+.hero-meta-bar {
+  display: flex;
+  gap: 20px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--c-heller-slate);
+  margin-bottom: 35px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.hero-headline {
+  font-family: var(--font-serif);
+  font-size: 3.8rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--c-heller-black);
+  max-width: 1080px;
+  margin-bottom: 50px;
+}
+
+.hero-headline em {
+  font-style: italic;
+  color: var(--c-heller-blue);
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+}
+
+.hero-split-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.hero-lead-text p {
+  font-size: 1.12rem;
+  line-height: 1.8;
+  color: #2b303a;
+  margin-bottom: 22px;
+}
+
+.carnegie-opener {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: var(--c-heller-black);
+  font-style: italic;
+  margin-bottom: 16px !important;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 35px;
+}
+
+.btn-brutalist-dark {
+  background: var(--c-heller-black);
+  color: white;
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 16px 28px;
+  border: 2px solid var(--border-stark);
+  transition: all 0.2s ease;
+  letter-spacing: 0.5px;
+}
+
+.btn-brutalist-dark:hover {
+  background: var(--c-heller-blue);
+  border-color: var(--c-heller-blue);
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 var(--border-stark);
+}
+
+.btn-brutalist-outline {
+  background: transparent;
+  color: var(--c-heller-black);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 16px 28px;
+  border: 2px solid var(--border-stark);
+  transition: all 0.2s ease;
+  letter-spacing: 0.5px;
+}
+
+.btn-brutalist-outline:hover {
+  background: var(--c-heller-black);
+  color: white;
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 var(--c-heller-terracotta);
+}
+
+.hero-side-frame {
+  position: relative;
+}
+
+.brutalist-box {
+  background: var(--bg-canvas);
+  border: 2px solid var(--border-stark);
+  padding: 36px 30px;
+  box-shadow: 6px 6px 0 var(--border-stark);
+}
+
+.box-index {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--c-heller-terracotta);
+  margin-bottom: 12px;
+}
+
+.box-title {
+  font-family: var(--font-serif);
+  font-size: 1.7rem;
+  color: var(--c-heller-black);
+  margin-bottom: 14px;
+}
+
+.box-paragraph {
+  font-size: 0.96rem;
+  line-height: 1.7;
+  color: var(--c-heller-slate);
+  font-style: italic;
+  margin-bottom: 28px;
+}
+
+.data-strip {
+  border-top: 1px solid var(--border-stark);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.data-cell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  border-bottom: 1px dashed var(--border-subtle);
+  padding-bottom: 8px;
+}
+
+.data-val {
+  font-weight: 800;
+  color: var(--c-heller-black);
+}
+
+.data-lbl {
+  color: var(--c-heller-slate);
+}
+
+/* ==========================================================
+   CORES DE EVA HELLER
+   ========================================================== */
+.heller-section {
+  padding: 95px 0;
+  border-bottom: 2px solid var(--border-stark);
+  background: var(--bg-canvas);
+}
+
+.section-title-wrap {
+  margin-bottom: 50px;
+  max-width: 860px;
+}
+
+.section-index {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--c-heller-terracotta);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.section-heading {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: var(--c-heller-black);
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.section-desc {
+  font-size: 1.05rem;
+  color: var(--c-heller-slate);
+  line-height: 1.75;
+}
+
+.heller-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.heller-card {
+  background: white;
+  border: 2px solid var(--border-stark);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.heller-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 6px 6px 0 var(--border-stark);
+}
+
+.color-sample {
+  height: 90px;
+  border-bottom: 2px solid var(--border-stark);
+}
+
+.sample-blue { background-color: var(--c-heller-blue); }
+.sample-black { background-color: var(--c-heller-black); }
+.sample-white { background-color: var(--c-heller-white); border-bottom: 2px solid var(--border-stark); }
+.sample-terracotta { background-color: var(--c-heller-terracotta); }
+
+.heller-card-body {
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.color-name {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: var(--c-heller-black);
+  margin-bottom: 6px;
+}
+
+.color-psychology {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--c-heller-blue);
+  line-height: 1.3;
+  margin-bottom: 14px;
+}
+
+.color-explanation {
+  font-size: 0.86rem;
+  color: var(--c-heller-slate);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.color-application {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 14px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #222;
+}
+
+/* ==========================================================
+   DIAGNÓSTICO ANTES E DEPOIS
+   ========================================================== */
+.diagnostic-section {
+  padding: 95px 0;
+  border-bottom: 2px solid var(--border-stark);
+  background: white;
+}
+
+.diagnostic-brutalist-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.diag-block {
+  border: 2px solid var(--border-stark);
+  padding: 40px;
+  position: relative;
+}
+
+.diag-current {
+  background: #fbfbfa;
+}
+
+.diag-future {
+  background: var(--bg-canvas);
+  box-shadow: 6px 6px 0 var(--border-stark);
+}
+
+.diag-tag-warn {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #9c2720;
+  letter-spacing: 1.5px;
+  margin-bottom: 14px;
+}
+
+.diag-tag-success {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--c-heller-blue);
+  letter-spacing: 1.5px;
+  margin-bottom: 14px;
+}
+
+.diag-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--c-heller-black);
+  margin-bottom: 16px;
+}
+
+.diag-intro {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--c-heller-slate);
+  margin-bottom: 26px;
+}
+
+.diag-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.diag-items li {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  border-left: 2px solid var(--border-stark);
+  padding-left: 14px;
+}
+
+/* ==========================================================
+   ROTEIRO 2 DIAS (ABAS BRUTALISTAS)
+   ========================================================== */
+.schedule-section {
+  padding: 95px 0;
+  border-bottom: 2px solid var(--border-stark);
+  background: var(--bg-canvas);
+}
+
+.stage-nav-brutalist {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.stage-btn-b {
+  background: white;
+  border: 2px solid var(--border-stark);
+  padding: 18px 24px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.stage-btn-b .stage-code {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--c-heller-slate);
+  margin-bottom: 4px;
+}
+
+.stage-btn-b .stage-name {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  color: var(--c-heller-black);
+}
+
+.stage-btn-b.active {
+  background: var(--c-heller-black);
+  color: white;
+  transform: translate(-3px, -3px);
+  box-shadow: 5px 5px 0 var(--c-heller-terracotta);
+}
+
+.stage-btn-b.active .stage-code {
+  color: var(--c-heller-white);
+}
+
+.stage-btn-b.active .stage-name {
+  color: white;
+}
+
+.stage-panel-wrap {
+  display: none;
+  background: white;
+  border: 2px solid var(--border-stark);
+  padding: 50px 45px;
+  box-shadow: 6px 6px 0 var(--border-stark);
+}
+
+.stage-panel-wrap.active {
+  display: block;
+  animation: brutalIn 0.3s ease;
+}
+
+@keyframes brutalIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.stage-details-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 50px;
+}
+
+.stage-badge-mono {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--c-heller-blue);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.stage-hero-heading {
+  font-family: var(--font-serif);
+  font-size: 2.3rem;
+  color: var(--c-heller-black);
+  margin-bottom: 20px;
+  line-height: 1.25;
+}
+
+.stage-narrative p {
+  font-size: 1.02rem;
+  line-height: 1.8;
+  color: #2e3440;
+  margin-bottom: 18px;
+}
+
+.spec-grid {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.spec-card {
+  border: 1px solid var(--border-stark);
+  background: var(--bg-canvas);
+  padding: 16px 20px;
+  display: flex;
+  gap: 16px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.spec-num {
+  font-family: var(--font-mono);
+  font-weight: 800;
+  color: var(--c-heller-blue);
+  font-size: 1.1rem;
+}
+
+.stage-summary-box {
+  background: var(--bg-canvas);
+  border: 2px solid var(--border-stark);
+  padding: 30px;
+}
+
+.box-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--c-heller-terracotta);
+  display: block;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-stark);
+  padding-bottom: 8px;
+}
+
+.specs-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.specs-list li {
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed var(--border-subtle);
+  padding-bottom: 6px;
+}
+
+.carnegie-reminder {
+  border-left: 3px solid var(--c-heller-blue);
+  padding-left: 14px;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--c-heller-slate);
+  line-height: 1.6;
+}
+
+/* ==========================================================
+   DALE CARNEGIE PILARES
+   ========================================================== */
+.carnegie-principles-section {
+  padding: 95px 0;
+  border-bottom: 2px solid var(--border-stark);
+  background: white;
+}
+
+.carnegie-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.c-col {
+  border: 2px solid var(--border-stark);
+  padding: 30px 24px;
+  background: var(--bg-canvas);
+  transition: transform 0.2s ease;
+}
+
+.c-col:hover {
+  transform: translateY(-4px);
+  box-shadow: 5px 5px 0 var(--border-stark);
+}
+
+.c-number {
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--c-heller-blue);
+  margin-bottom: 10px;
+}
+
+.c-title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  color: var(--c-heller-black);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.c-text {
+  font-size: 0.88rem;
+  color: var(--c-heller-slate);
+  line-height: 1.65;
+}
+
+/* ==========================================================
+   CARTA PESSOAL
+   ========================================================== */
+.letter-section {
+  padding: 90px 0;
+  border-bottom: 2px solid var(--border-stark);
+  background: var(--bg-canvas);
+}
+
+.letter-wrap {
+  max-width: 900px;
+}
+
+.letter-brutalist-card {
+  background: white;
+  border: 2px solid var(--border-stark);
+  padding: 55px;
+  box-shadow: 8px 8px 0 var(--border-stark);
+}
+
+.letter-top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--border-stark);
+  padding-bottom: 16px;
+  margin-bottom: 30px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+}
+
+.letter-location {
+  font-weight: 700;
+  color: var(--c-heller-blue);
+}
+
+.letter-stamp {
+  color: var(--c-heller-slate);
+}
+
+.letter-text p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #2b303a;
+  margin-bottom: 20px;
+}
+
+.letter-sign-block {
+  margin-top: 40px;
+  border-top: 1px solid var(--border-stark);
+  padding-top: 24px;
+}
+
+.sig-name {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--c-heller-black);
+}
+
+.sig-title {
+  font-size: 0.9rem;
+  color: var(--c-heller-slate);
+  margin-bottom: 4px;
+}
+
+.sig-contact {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--c-heller-blue);
+}
+
+/* ==========================================================
+   SEÇÃO FINAL DE INVESTIMENTO & VALOR (APENAS AQUI!)
+   ========================================================== */
+.proposal-pricing-section {
+  padding: 100px 0 110px;
+  border-bottom: 2px solid var(--border-stark);
+  background: #ffffff;
+}
+
+.pricing-brutalist-container {
+  max-width: 960px;
+  margin: 0 auto;
+  border: 3px solid var(--border-stark);
+  background: var(--bg-canvas);
+  padding: 60px 50px;
+  box-shadow: 10px 10px 0 var(--border-stark);
+}
+
+.pricing-header-block {
+  border-bottom: 2px solid var(--border-stark);
+  padding-bottom: 26px;
+  margin-bottom: 35px;
+}
+
+.pricing-pretitle {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--c-heller-terracotta);
+  margin-bottom: 8px;
+}
+
+.pricing-main-title {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  color: var(--c-heller-black);
+  margin-bottom: 10px;
+}
+
+.pricing-subtitle {
+  font-size: 1.1rem;
+  color: var(--c-heller-slate);
+}
+
+.pricing-spec-table {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+  background: white;
+  border: 1px solid var(--border-stark);
+  padding: 20px 24px;
+}
+
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  border-bottom: 1px dashed var(--border-subtle);
+  padding-bottom: 8px;
+}
+
+.spec-label {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--c-heller-slate);
+}
+
+.spec-val {
+  font-weight: 600;
+  color: var(--c-heller-black);
+  text-align: right;
+}
+
+/* O Monumento de 10x sem juros */
+.price-display-box {
+  background: white;
+  border: 3px solid var(--border-stark);
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  box-shadow: 6px 6px 0 var(--c-heller-blue);
+}
+
+.price-installment-badge {
+  display: inline-block;
+  background: var(--c-heller-black);
+  color: white;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  padding: 6px 16px;
+  margin-bottom: 16px;
+}
+
+.installment-monument {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.inst-count {
+  font-family: var(--font-mono);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--c-heller-slate);
+}
+
+.inst-currency {
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--c-heller-blue);
+}
+
+.inst-val {
+  font-family: var(--font-mono);
+  font-size: 6rem;
+  font-weight: 800;
+  color: var(--c-heller-black);
+  line-height: 1;
+}
+
+.inst-cents {
+  font-family: var(--font-mono);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--c-heller-black);
+}
+
+.inst-no-interest {
+  background: var(--c-heller-terracotta);
+  color: white;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  padding: 6px 12px;
+  margin-left: 14px;
+}
+
+.total-price-line {
+  font-size: 1.05rem;
+  color: var(--c-heller-slate);
+  margin-top: 14px;
+}
+
+.total-price-line strong {
+  color: var(--c-heller-black);
+}
+
+/* Inclusões */
+.deliverables-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.deliv-item {
+  display: flex;
+  gap: 12px;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.deliv-icon {
+  color: var(--c-heller-blue);
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+/* Opções de Pagamento */
+.payment-options-brutalist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.opt-box {
+  background: white;
+  border: 2px solid var(--border-stark);
+  padding: 18px 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.opt-box.active {
+  background: var(--c-heller-blue);
+  color: white;
+  border-color: var(--c-heller-blue);
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 var(--border-stark);
+}
+
+.opt-box.active .opt-tag {
+  color: #c0d8f0;
+}
+
+.opt-box.active .opt-highlight {
+  color: white;
+}
+
+.opt-box.active .opt-info {
+  color: #e0ecf8;
+}
+
+.opt-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 1.5px;
+  color: var(--c-heller-slate);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.opt-highlight {
+  font-family: var(--font-mono);
+  font-size: 1.15rem;
+  font-weight: 800;
+  display: block;
+  color: var(--c-heller-black);
+  margin-bottom: 4px;
+}
+
+.opt-info {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+/* CTA Monumental */
+.cta-direct-block {
+  text-align: center;
+}
+
+.btn-whatsapp-monument {
+  background: var(--c-heller-black);
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 30px;
+  border: 2px solid var(--border-stark);
+  box-shadow: 6px 6px 0 var(--c-heller-terracotta);
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.btn-whatsapp-monument:hover {
+  background: var(--c-heller-blue);
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 var(--c-heller-terracotta);
+}
+
+.btn-main-txt {
+  font-family: var(--font-mono);
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.btn-sub-txt {
+  font-size: 0.88rem;
+  color: #ddd;
+  margin-top: 6px;
+}
+
+.direct-contact-note {
+  margin-top: 18px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--c-heller-slate);
+}
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+.footer-brutalist {
+  background: var(--c-heller-black);
+  color: white;
+  padding: 30px 0;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero-headline { font-size: 2.8rem; }
+  .hero-split-grid { grid-template-columns: 1fr; }
+  .heller-grid { grid-template-columns: 1fr 1fr; }
+  .diagnostic-brutalist-grid { grid-template-columns: 1fr; }
+  .stage-details-grid { grid-template-columns: 1fr; }
+  .carnegie-row { grid-template-columns: 1fr 1fr; }
+  .deliverables-grid { grid-template-columns: 1fr; }
+  .stage-nav-brutalist { flex-direction: column; }
+}
+
+@media (max-width: 600px) {
+  body { border-left: none; border-right: none; }
+  .hero-headline { font-size: 2.2rem; }
+  .heller-grid { grid-template-columns: 1fr; }
+  .carnegie-row { grid-template-columns: 1fr; }
+  .payment-options-brutalist { grid-template-columns: 1fr; }
+  .pricing-brutalist-container { padding: 35px 20px; }
+  .letter-brutalist-card { padding: 30px 20px; }
+  .inst-val { font-size: 4rem; }
+}
